@@ -1,4 +1,4 @@
-# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Findings added from the SharePoint reports on 2026-11-02. Review before publishing.
 id: 2025-spring_arboretum-sound-map
 title: Sound mapping across Sehome Hill Arboretum
 term: Spring 2025
@@ -9,13 +9,16 @@ also_themes:
 status: draft
 names_public: false
 team: []
-summary: Students recorded and mapped sounds across the whole Sehome Hill Arboretum, MAP's
-  first look at sensory conditions outdoors.
+summary: Students recorded sound and took 360-degree photos at eleven popular spots in Sehome Hill
+  Arboretum, and built a story map where you can look around each spot while hearing it. People with
+  visual or mobility disabilities, or anyone who cannot visit, can explore the arboretum this way
+  and decide where to go. Comparing average sound levels in decibels showed which parts of the arboretum
+  are noisier than others.
 links:
   storymap: https://storymaps.arcgis.com/stories/f6c08987d51c46eb93325c8de2136344
   form: https://wwu.maps.arcgis.com/home/item.html?id=f33c285939e742ffa77751201e11808e
   report: https://wwu2.sharepoint.com/:f:/s/MappingAccessibility/IgCI0y8Kow1TR4dVGRiuLH1kAWmvpxD2YMyWoRevzUe944g?e=GMEtgN
 license: CC BY 4.0
 steward: Francisco Laso
-notes: Canvas says SoundMap data may need to be requested from past authors. Summary needs
-  the key finding.
+notes: Canvas says SoundMap data may need to be requested from past authors. Each recording needs
+  a short written description before publishing.

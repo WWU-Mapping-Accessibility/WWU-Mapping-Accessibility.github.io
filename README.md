@@ -15,7 +15,7 @@ MAP is a collaboration at Western Washington University (WWU) in which students 
 | Reports, raw data, photos, audio | MAP SharePoint, `Projects/<id>/` |
 | Code and tools | Repos in this GitHub organization |
 
-The story of MAP is told on the WordPress site (wp.wwu.edu/accessiblemaps), which links here for projects, the library and data.
+The story pages (About, People, Get involved, Accessibility statement) are Markdown files in `pages/`. Edit them in GitHub's web editor; the build turns each one into `<name>.html`. The WordPress site (wp.wwu.edu/accessiblemaps) only points here.
 
 ## Add or update a project
 

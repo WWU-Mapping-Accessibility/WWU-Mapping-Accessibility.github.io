@@ -17,6 +17,7 @@ import shutil
 import sys
 import urllib.request
 
+import markdown
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -25,7 +26,6 @@ ZOTERO_GROUP = "5222766"
 ZOTERO_URL = "https://www.zotero.org/groups/5222766/mapping_accessibility"
 HUB_URL = "https://mapping-accessibility-wwu.hub.arcgis.com"
 AGOL_GROUP = "https://wwu.maps.arcgis.com/home/group.html?id=8af3a042c5ee44389f7c4195d3842a87"
-WORDPRESS_URL = "https://wp.wwu.edu/accessiblemaps/"
 TRACKS = {"ENVS 421", "senior project", "internship", "research"}
 LINK_LABELS = [
     ("storymap", "Story map"),
@@ -158,7 +158,15 @@ h1{font-size:2rem;line-height:1.2} h2{margin-top:2.5rem;border-bottom:1px solid 
 footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1rem;padding-bottom:2rem;color:var(--muted);font-size:.95rem}
 """
 
-NAV = [("index.html", "Home"), ("projects.html", "Projects"), ("data.html", "Data and tools"), ("library.html", "Library")]
+NAV = [
+    ("index.html", "Home"),
+    ("about.html", "About"),
+    ("projects.html", "Projects"),
+    ("data.html", "Data and tools"),
+    ("library.html", "Library"),
+    ("people.html", "People"),
+    ("get-involved.html", "Get involved"),
+]
 
 
 def page(fname, title, body, built):
@@ -179,15 +187,16 @@ def page(fname, title, body, built):
 <a class="skip" href="#main">Skip to main content</a>
 <header>
 <p>Mapping Accessibility Project (MAP)</p>
-<nav aria-label="Main"><ul>{nav}<li><a href="{WORDPRESS_URL}">About MAP</a></li></ul></nav>
+<nav aria-label="Main"><ul>{nav}</ul></nav>
 </header>
 <main id="main">
 {body}
 </main>
 <footer>
-<p>Mapping Accessibility Project, Western Washington University. Content is shared under
+<p>The Mapping Accessibility Project is a project of Western Washington University in Bellingham, Washington. Contact: <a href="mailto:lasof@wwu.edu">lasof@wwu.edu</a>.</p>
+<p>Content is shared under
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Updated {built}.</p>
-<p>Found an accessibility problem with this page? Tell us at lasof@wwu.edu.</p>
+<p><a href="accessibility.html">Accessibility statement</a>. Found a problem with this page? Tell us at lasof@wwu.edu.</p>
 </footer>
 </body>
 </html>
@@ -289,16 +298,47 @@ def build_index(themes, projects, n_sources, built):
     recent = projects[:3]
     cards = "\n".join(project_card(p, themes, heading="h3") for p in recent)
     body = f"""<h1>Mapping Accessibility Project</h1>
-<p class="lead">Students at Western Washington University map the barriers and resources that shape who can move through campus and Bellingham, and share the data so others can act on it.</p>
+<p class="lead">MAP is students, faculty and community partners at Western Washington University. We map barriers on campus and around Bellingham, such as doors, sidewalks, noise and trails, so people can plan their routes, and so the people who can fix barriers know where to start.</p>
 <ul>
+<li><a href="about.html">About MAP</a>: our story and how we work</li>
 <li><a href="projects.html">Projects</a>: {len(projects)} student projects since 2023</li>
 <li><a href="data.html">Data and tools</a>: maps, datasets, survey forms and code</li>
 <li><a href="library.html">Library</a>: {n_sources if n_sources else "MAP's"} sources on disability, access and mapping</li>
-<li><a href="{WORDPRESS_URL}">About MAP</a>: our story and how to get involved</li>
+<li><a href="get-involved.html">Get involved</a>: join us as a student, partner or collaborator</li>
 </ul>
 {"<h2>Recent projects</h2>" + cards if recent else ""}
 """
     return page("index.html", "Home", body, built)
+
+
+# ---------------------------------------------------------------- story pages
+def load_people():
+    people = yaml.safe_load((ROOT / "people.yml").read_text()) or []
+    return [x for x in people if x.get("consent")]
+
+
+def build_story_pages(built):
+    """Render pages/*.md (YAML front matter + Markdown) into <name>.html."""
+    out = {}
+    for path in sorted((ROOT / "pages").glob("*.md")):
+        text = path.read_text()
+        meta, body_md = {}, text
+        if text.startswith("---"):
+            _, fm, body_md = text.split("---", 2)
+            meta = yaml.safe_load(fm) or {}
+        title = meta.get("title") or path.stem.replace("-", " ").capitalize()
+        body = f"<h1>{e(title)}</h1>\n"
+        if meta.get("lead"):
+            body += f'<p class="lead">{e(meta["lead"])}</p>\n'
+        body += markdown.markdown(body_md, extensions=["sane_lists"])
+        if path.stem == "people":
+            people = load_people()
+            if people:
+                items = "".join(f"<li><strong>{e(x['name'])}</strong>, {e(x.get('role', ''))}</li>" for x in people)
+                body += f"<h2>Team</h2>\n<ul>{items}</ul>\n"
+        fname = f"{path.stem}.html"
+        out[fname] = page(fname, title, body, built)
+    return out
 
 
 # ---------------------------------------------------------------- outputs
@@ -353,6 +393,8 @@ def main():
     (OUT / "projects.html").write_text(build_projects(themes, projects, built))
     (OUT / "library.html").write_text(build_library(groups, total, built))
     (OUT / "data.html").write_text(build_data(built))
+    for fname, html_text in build_story_pages(built).items():
+        (OUT / fname).write_text(html_text)
     (OUT / "outputs" / "canvas_past_work.html").write_text(canvas_past_work(themes, projects))
     (OUT / "outputs" / "digest.md").write_text(digest(projects, built))
     (OUT / ".nojekyll").write_text("")

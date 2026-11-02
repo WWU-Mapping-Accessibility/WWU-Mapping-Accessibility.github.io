@@ -1,4 +1,4 @@
-# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Findings added from the SharePoint reports on 2026-11-02. Review before publishing.
 id: 2025-spring_evacuation-routes
 title: Accessibility of residence hall evacuation routes
 term: Spring 2025
@@ -7,11 +7,15 @@ theme: safety
 status: draft
 names_public: false
 team: []
-summary: A senior project measuring how physically accessible residence hall fire assembly
-  points are for students with physical disabilities, including evacuation chairs in stairwells
-  and areas of refuge.
+summary: This senior project asked how fire evacuation procedures in WWU residence halls account
+  for students with physical disabilities. A literature review and conversations with key campus
+  staff found narrow stairwells, too little assistive equipment such as evacuation chairs, and gaps
+  in how procedures are communicated. Fire drills often leave disabled students unprepared for a
+  real emergency. Mapping the assembly point for each residence hall showed where changes could keep
+  students with physical disabilities safer during an evacuation.
 links:
   report: 'SharePoint: Safety and Accessibility/Fire Safety'
 license: CC BY 4.0
 steward: Francisco Laso
-notes: Needs the main finding and links.
+notes: 'Report: Safety and Accessibility/Fire Safety/Final Spring Report(2).docx. Add the map link
+  if one was published.'

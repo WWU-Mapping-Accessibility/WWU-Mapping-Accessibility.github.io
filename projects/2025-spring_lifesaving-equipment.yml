@@ -1,17 +1,20 @@
-# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Findings added from the SharePoint reports on 2026-11-02. Review before publishing.
 id: 2025-spring_lifesaving-equipment
-title: Lifesaving equipment on campus
+title: Finding defibrillators and naloxone on campus
 term: Spring 2025
 track: senior project
 theme: safety
 status: draft
 names_public: false
 team: []
-summary: A senior project mapping AEDs, first-aid kits and other medical equipment on campus,
-  with an accessibility rating for each building, a story map and datasets for WWU's interactive
+summary: This project mapped where to find automated external defibrillators (AEDs), naloxone (Narcan)
+  and first-aid kits on campus, and checked the campus map against what is really there. Of the 34
+  AEDs WWU maintains, 31 were on the map, but only 8 of those 31 were marked within 5 feet of their
+  real location, so many were hard to find. The project remapped every AED to within about 5 feet
+  and wrote directions to each one, including the quickest accessible route, for WWU's interactive
   map.
 links:
   report: 'SharePoint: Safety and Accessibility/Lifesaving Resources'
 license: CC BY 4.0
 steward: Francisco Laso
-notes: Needs the main finding and story map link.
+notes: The report calls this an independent study; confirm the track. Story map link still needed.

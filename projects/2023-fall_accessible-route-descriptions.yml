@@ -1,0 +1,28 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Findings added from the SharePoint reports on 2026-11-02. Review before publishing.
+id: 2023-fall_accessible-route-descriptions
+title: Written directions along accessible routes
+term: Fall 2023
+track: internship
+theme: campus-map
+also_themes:
+- buildings
+status: draft
+names_public: false
+team: []
+partner: null
+summary: Student interns walked WWU's designated accessible routes and wrote step-by-step directions
+  from accessible parking lots and bus stops to accessible building entrances, and back. The directions
+  give screen-reader users information the campus map does not, and a prototype showed how to add
+  them to the map. Writing them revealed several places on campus with no truly accessible route
+  or entrance. Not every building is covered yet, and the directions still need review by the people
+  who will use them.
+links:
+  data: https://docs.google.com/spreadsheets/d/1_3lfAUtqulBOXXkNxr-ZAcQ-_4Nj9cuGjCVdF9B4xE0/edit
+  code: https://github.com/ChefHorst/campus-map-esri/tree/accDirections
+license: CC BY 4.0
+next_steps: Finish the remaining buildings, have blind and low-vision users review the directions,
+  and add 360-degree photos of entrances and parking lots, as the library's Find a Space tool does.
+steward: Francisco Laso
+notes: From the Canvas Previous Work page. The directions spreadsheet is in Google Drive and the
+  prototype is in a personal GitHub repo; copy both into MAP's SharePoint and GitHub organization
+  before publishing.

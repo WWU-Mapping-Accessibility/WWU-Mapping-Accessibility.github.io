@@ -1,15 +1,24 @@
-# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Findings added from the SharePoint reports on 2026-11-02. Review before publishing.
 id: 2025-spring_building-audit-senior
-title: Building accessibility auditing at WWU
+title: 'Students for Accessible Western: a community building audit'
 term: Spring 2025
 track: senior project
 theme: buildings
 status: draft
-names_public: false
 team: []
-summary: A senior project leading MAP's work on auditing campus buildings for physical barriers
-  to access.
-links: {}
+summary: Most WWU buildings were designed before universal design and the Americans with Disabilities
+  Act shaped how buildings are made. This senior project organized Students for Accessible Western
+  (SAW), a community audit of academic buildings run with the student advocacy group This Is Not
+  Accessible (TINA). R scripts turn audit responses into formats Facilities can use and ArcGIS Pro
+  can map. Too few audits came in to show where barriers cluster, but the project showed that community
+  audits can link students' everyday experience to Facilities, and its survey, guidelines and scripts
+  are ready for future rounds.
+links:
+  report: 'SharePoint: Buildings Audits/Spring 2025 Building Audits/Students for Accessible Western-SAW'
 license: CC BY 4.0
 steward: Francisco Laso
-notes: Needs details, report and dataset links.
+notes: The ENVS 421 building-audit team processed SAW data the same quarter, and the 2026 Arntzen
+  Hall audit built on the SAW survey.
+partner: This Is Not Accessible (TINA), a student advocacy group
+next_steps: Run more rounds of the SAW audit so there is enough data to map where barriers cluster.
+names_public: false
