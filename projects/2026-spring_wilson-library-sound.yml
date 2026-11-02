@@ -4,16 +4,14 @@ title: 'Sensory spaces: sound levels in Wilson Library'
 term: Spring 2026
 track: ENVS 421
 theme: sensory
-status: draft
+status: published
 names_public: false
 team: []
 summary: For neurodivergent and sensory-sensitive students, the team recorded one minute of
   audio in each of 18 public rooms on Wilson Library's floors 2 and 5 at the busiest hour.
   Floor 2 averaged -43.0 LUFS, about 11 LUFS louder than quiet-study Floor 5. Their dashboard
   links each room to its recording, so you can hear a space as well as see its loudness.
-image:
-  file: wilson.jpg
-  alt: Map of Wilson Library floor 2 rooms shaded by loudness
+# Image removed: the map's credit line shows student names. Add it back once names are cleared.
 links:
   dashboard: https://www.arcgis.com/apps/dashboards/d0089a3ee9ea461c91c4c55baaf5381d
   webmap: https://arcg.is/1W4qH52

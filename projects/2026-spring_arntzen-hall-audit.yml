@@ -4,7 +4,7 @@ title: 'Auditing campus building accessibility: Arntzen Hall'
 term: Spring 2026
 track: ENVS 421
 theme: buildings
-status: draft
+status: published
 names_public: false
 team: []
 summary: The team digitized every floor of Arntzen Hall and built a phone form so a volunteer
@@ -12,10 +12,7 @@ summary: The team digitized every floor of Arntzen Hall and built a phone form s
   best ADA route from accessible entrances and elevators to every room. On a 1 to 5 scale,
   every room type had at least one category averaging below 3, including classroom chairs
   (2.1) and bathroom internal space (2.0).
-# The image is a screenshot of the public dashboard; its header shows the team names.
-image:
-  file: arntzen.jpg
-  alt: Arntzen Hall accessibility audit dashboard showing floor plans and scores
+# Image removed: the dashboard screenshot shows student names. Add a new image (with alt text) once names are cleared.
 links:
   dashboard: https://www.arcgis.com/apps/dashboards/8e9d0f0d93ea4fc69a31cd46e4982912
   webmap: https://wwu.maps.arcgis.com/home/item.html?id=8e49f44dd3184955937914553ba881e0

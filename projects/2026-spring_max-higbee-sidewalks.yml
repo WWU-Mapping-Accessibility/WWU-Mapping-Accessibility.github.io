@@ -6,7 +6,7 @@ track: ENVS 421
 theme: community
 also_themes:
 - outdoor
-status: draft
+status: published
 names_public: false
 team: []
 partner: Max Higbee Center
@@ -15,9 +15,7 @@ summary: With the Max Higbee Center, which runs recreation programs for people w
   About a quarter exceed the 5% ADA slope threshold, and 49% are at least moderately rough.
   The main product is a 30 by 40 inch magnetic poster map that staff and participants use
   to plan outings.
-image:
-  file: higbee.jpg
-  alt: Downtown Bellingham outing-planning map made for the Max Higbee Center
+# Image removed: the map's credit line shows student names. Add it back once names are cleared.
 links:
   data: https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Max_Higbee_Downtown_Sidewalks/FeatureServer
 license: CC BY 4.0
