@@ -107,24 +107,29 @@ def zotero_all(path):
 
 
 def load_library():
+    """Return {top collection: {sub path or "": [items]}} and the item count."""
     collections = zotero_all("collections")
     items = zotero_all("items/top?include=bib,data&style=apa&sort=creator")
     by_key = {c["key"]: c["data"] for c in collections}
 
-    def top_name(key):
-        seen = set()
-        while key in by_key and by_key[key].get("parentCollection") and key not in seen:
+    def chain(key):
+        names, seen = [], set()
+        while key in by_key and key not in seen:
             seen.add(key)
-            key = by_key[key]["parentCollection"]
-        return by_key.get(key, {}).get("name", "Other")
+            names.insert(0, by_key[key]["name"])
+            key = by_key[key].get("parentCollection") or None
+        return names
 
     groups = {}
     for it in items:
         if it["data"].get("itemType") in ("attachment", "note"):
             continue
-        names = {top_name(k) for k in it["data"].get("collections", [])} or {"Not yet sorted"}
-        for n in names:
-            groups.setdefault(n, []).append(it)
+        paths = [chain(k) for k in it["data"].get("collections", [])] or [["Not yet sorted"]]
+        for names in {tuple(n) for n in paths if n}:
+            sub = " / ".join(names[1:])
+            bucket = groups.setdefault(names[0], {}).setdefault(sub, [])
+            if it not in bucket:
+                bucket.append(it)
     return groups, len(items)
 
 
@@ -231,22 +236,39 @@ def build_projects(themes, projects, built):
     return page("projects.html", "Projects", "\n".join(body), built)
 
 
+LIBRARY_ORDER = [
+    "MAP Outputs",
+    "Foundations: disability studies and justice",
+    "Disability in higher education",
+    "Methods: participatory and crowdsourced mapping",
+    "Buildings", "Outdoor and trails", "Safety and emergencies", "Sensory spaces",
+    "Community partners", "Campus map and wayfinding",
+    "ENVS 421 core readings",
+]
+
+
 def build_library(groups, total, built):
     if groups is None:
         body = f'<h1>Library</h1><p class="lead">The library could not be loaded this time. Browse it directly in the <a href="{ZOTERO_URL}/library">MAP Zotero group</a>.</p>'
         return page("library.html", "Library", body, built)
-    order = sorted(groups, key=lambda n: (n != "MAP Outputs", n == "Not yet sorted", n.lower()))
-    toc = "".join(f'<li><a href="#c{i}">{e(n)} ({len(groups[n])})</a></li>' for i, n in enumerate(order))
+    rank = {n: i for i, n in enumerate(LIBRARY_ORDER)}
+    order = sorted(groups, key=lambda n: (n == "Not yet sorted", rank.get(n, 50), n.lower()))
+    count = lambda n: len({it["key"] for subs in groups[n].values() for it in subs})
+    toc = "".join(f'<li><a href="#c{i}">{e(n)} ({count(n)})</a></li>' for i, n in enumerate(order))
     body = [
         "<h1>Library</h1>",
         f'<p class="lead">{total} sources collected by MAP students and faculty, from disability studies to accessible map design. '
-        f'This page is rebuilt every night from the <a href="{ZOTERO_URL}/library">MAP Zotero group</a>, where you can search, export citations and see notes.</p>',
+        f'This page is rebuilt every night from the <a href="{ZOTERO_URL}/library">MAP Zotero group</a>, where you can search, export citations and see notes. '
+        "A source can appear under more than one heading.</p>",
         f'<nav aria-label="Collections"><ul>{toc}</ul></nav>',
     ]
     for i, n in enumerate(order):
         body.append(f'<h2 id="c{i}">{e(n)}</h2>')
-        for it in sorted(groups[n], key=lambda x: x.get("bib", "")):
-            body.append(f'<div class="bib">{it.get("bib", "")}</div>')  # Zotero returns sanitized citation HTML
+        for sub in sorted(groups[n], key=lambda s: (s != "", s.lower())):
+            if sub:
+                body.append(f"<h3>{e(sub)}</h3>")
+            for it in sorted(groups[n][sub], key=lambda x: x.get("bib", "")):
+                body.append(f'<div class="bib">{it.get("bib", "")}</div>')  # Zotero returns sanitized citation HTML
     return page("library.html", "Library", "\n".join(body), built)
 
 
