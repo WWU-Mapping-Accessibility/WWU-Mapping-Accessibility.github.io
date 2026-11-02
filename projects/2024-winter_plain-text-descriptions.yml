@@ -1,0 +1,21 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Findings added from the SharePoint reports on 2026-11-02. Review before publishing.
+id: 2024-winter_plain-text-descriptions
+title: Guidelines for plain-text descriptions of maps
+term: Winter 2024
+track: research
+theme: campus-map
+status: draft
+names_public: false
+team: []
+summary: Building on the fall 2023 route directions, this project looked at how other tools describe
+  places to blind and low-vision people, including Microsoft Soundscape, tactile maps and Western
+  Libraries' Find a Space, and wrote guidelines for plain-text descriptions of maps and routes. The
+  goal is for screen-reader users to get the same information as someone reading the map. The project
+  also compared two page layouts for showing directions in a campus map prototype.
+links:
+  report: 'SharePoint: Plain-Text Descriptions'
+license: CC BY 4.0
+steward: Francisco Laso
+notes: Report is dated Winter 2024. Confirm track (internship or research).
+builds_on:
+- 2023-fall_accessible-route-descriptions
