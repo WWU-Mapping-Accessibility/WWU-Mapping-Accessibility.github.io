@@ -22,4 +22,4 @@ Interested in accessibility mapping in your own course or research? Get in touch
 
 ## Contact us
 
-Email Dr. Francisco Laso, MAP coordinator, at [lasof@wwu.edu](mailto:lasof@wwu.edu). MAP also has a Discord server that is open to people outside WWU. Email us for an invitation.
+Email Dr. Francisco Laso, MAP coordinator, at [lasof@wwu.edu](mailto:lasof@wwu.edu). Students also run a Discord server, separate from MAP, that is open to people outside WWU. Email us if you would like an invitation.
