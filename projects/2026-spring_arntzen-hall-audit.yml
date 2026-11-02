@@ -1,0 +1,30 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2026-spring_arntzen-hall-audit
+title: 'Auditing campus building accessibility: Arntzen Hall'
+term: Spring 2026
+track: ENVS 421
+theme: buildings
+status: draft
+names_public: false
+team: []
+summary: The team digitized every floor of Arntzen Hall and built a phone form so a volunteer
+  with no GIS experience can audit a building room by room. A Python script generates the
+  best ADA route from accessible entrances and elevators to every room. On a 1 to 5 scale,
+  every room type had at least one category averaging below 3, including classroom chairs
+  (2.1) and bathroom internal space (2.0).
+# The image is a screenshot of the public dashboard; its header shows the team names.
+image:
+  file: arntzen.jpg
+  alt: Arntzen Hall accessibility audit dashboard showing floor plans and scores
+links:
+  dashboard: https://www.arcgis.com/apps/dashboards/8e9d0f0d93ea4fc69a31cd46e4982912
+  webmap: https://wwu.maps.arcgis.com/home/item.html?id=8e49f44dd3184955937914553ba881e0
+  form: https://fieldmaps.arcgis.app/?itemID=8e49f44dd3184955937914553ba881e0&referenceContext=open&anonymousAccess=true
+  code: https://github.com/JaimieGR/WWU-ADA-Route-Builder
+builds_on:
+- 2025-spring_campus-building-audits
+license: CC BY 4.0
+next_steps: Plain-text route descriptions for screen-reader users; a campus-wide audit.
+steward: Francisco Laso
+notes: 'Rescue from student accounts: Arcade pop-up code (OneDrive), ADA pathways PDF (Google
+  Drive). Fork the route-builder repo into this organization.'

@@ -1,0 +1,21 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2025-spring_huntoon-trail-change
+title: Huntoon Trail conditions over time
+term: Spring 2025
+track: ENVS 421
+theme: outdoor
+status: draft
+names_public: false
+team: []
+summary: Students compared new surveys of the Huntoon Trail with the 2024 data to see how
+  trail conditions changed over time.
+links:
+  storymap: https://storymaps.arcgis.com/stories/688eaa5809b94e37951683ed0280a2ec
+  dashboard: https://www.arcgis.com/apps/dashboards/16b01b2e989b40b3891c344050569639
+  report: https://wwu2.sharepoint.com/:f:/s/MappingAccessibility/IgCI0y8Kow1TR4dVGRiuLH1kAWmvpxD2YMyWoRevzUe944g?e=GMEtgN
+builds_on:
+- 2024-spring_huntoon-trail
+license: CC BY 4.0
+steward: Francisco Laso
+notes: Reports, geodatabase, GeoJSON and R scripts in SharePoint. Summary needs the key finding
+  with its number.

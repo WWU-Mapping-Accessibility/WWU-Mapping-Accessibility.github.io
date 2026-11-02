@@ -1,0 +1,6 @@
+# Public bios. Add a person only after they agree to be listed.
+# Students are listed with their project ids so project pages can credit them.
+- name: Francisco Laso
+  role: MAP coordinator; Assistant Professor, Environmental Studies
+  consent: true
+  projects: []

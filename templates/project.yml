@@ -1,0 +1,39 @@
+# Copy to projects/<year>-<term>_<short-name>.yml and fill in.
+# Lines starting with # are notes; delete them when you're done.
+
+id: 2026-spring_short-name          # must match the file name
+title: ""                           # plain, specific, under 80 characters
+term: Spring 2026                   # Fall, Winter, Spring or Summer + year
+track: ENVS 421                     # ENVS 421 | senior project | internship | research
+theme: buildings                    # one id from themes.yml
+also_themes: []                     # optional extra theme ids
+status: draft                       # draft | published (coordinator sets published)
+
+names_public: false                 # true only if everyone listed agreed at handoff
+team: []                            # leave empty unless names_public is true
+partner: null                       # community or campus partner, if any
+
+summary: >
+  About 100 plain-language words: what you mapped, how, and the most important
+  finding with its number. Write for someone who will hear it on a screen reader.
+
+image:                              # optional; alt text is required if you add one
+  file: null                        # path in SharePoint Projects/<id>/04_Media/ or a public URL
+  alt: null
+
+links:                              # delete lines you don't have
+  storymap: null
+  text_version: null                # screen-reader-friendly version of the story map
+  webmap: null
+  dashboard: null
+  app: null
+  form: null
+  report: null                      # SharePoint link
+  data: null                        # SharePoint or ArcGIS link
+  code: null                        # GitHub repo in WWU-Mapping-Accessibility
+
+builds_on: []                       # ids of earlier projects this one continues
+zotero_collection: null             # key of the project's Zotero collection
+license: CC BY 4.0
+next_steps: ""                      # what the next team could do
+steward: Francisco Laso             # who answers questions after the team leaves

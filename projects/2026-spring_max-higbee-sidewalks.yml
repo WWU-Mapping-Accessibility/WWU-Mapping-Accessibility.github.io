@@ -1,0 +1,25 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2026-spring_max-higbee-sidewalks
+title: Downtown sidewalks with the Max Higbee Center
+term: Spring 2026
+track: ENVS 421
+theme: community
+also_themes:
+- outdoor
+status: draft
+names_public: false
+team: []
+partner: Max Higbee Center
+summary: With the Max Higbee Center, which runs recreation programs for people with developmental
+  disabilities, the team mapped slope and surface roughness on 440 downtown sidewalk segments.
+  About a quarter exceed the 5% ADA slope threshold, and 49% are at least moderately rough.
+  The main product is a 30 by 40 inch magnetic poster map that staff and participants use
+  to plan outings.
+image:
+  file: higbee.jpg
+  alt: Downtown Bellingham outing-planning map made for the Max Higbee Center
+links:
+  data: https://services.arcgis.com/qboYD3ru0louQq4F/arcgis/rest/services/Max_Higbee_Downtown_Sidewalks/FeatureServer
+license: CC BY 4.0
+next_steps: Sensor-based roughness measurements instead of a subjective checklist.
+steward: Francisco Laso

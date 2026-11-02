@@ -1,0 +1,23 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2024-spring_huntoon-trail
+title: 'Huntoon Trail, second survey: every segment'
+term: Spring 2024
+track: ENVS 421
+theme: outdoor
+status: draft
+names_public: false
+team: []
+summary: A class twice the size repeated the Winter 2024 survey of the Huntoon Trail to cover
+  all segments and document seasonal change. With the earlier data in hand, students could
+  run more advanced analysis of surface conditions along the trail.
+links:
+  storymap: https://storymaps.arcgis.com/stories/586f39286e734dfbaefa3f4a740dc831
+  dashboard: https://www.arcgis.com/apps/dashboards/dfd36b4d44314112ba09be9d126397e0
+  webmap: https://wwu.maps.arcgis.com/home/item.html?id=44c4aeef6c7b42b581fca24735cafa5b
+  data: https://wwu2.sharepoint.com/:u:/s/MappingAccessibility/EdjU-dvxuiFFgnQ-K4LyojYBuHhkuZF2dY37_Vo_xyfekg?e=VQOsgm
+  report: https://wwu2.sharepoint.com/:f:/s/MappingAccessibility/Elr6kCJK5k5Hn7WdWFxKlmEB758F_Avy9sWolHYTz7q4kw?e=SiteOm
+builds_on:
+- 2024-winter_huntoon-trail
+license: CC BY 4.0
+steward: Francisco Laso
+notes: Data in SharePoint as geodatabase, GeoJSON and GPX.

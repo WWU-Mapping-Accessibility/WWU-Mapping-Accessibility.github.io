@@ -1,0 +1,27 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2026-spring_automatic-doors
+title: Automatic door accessibility at WWU
+term: Spring 2026
+track: ENVS 421
+theme: buildings
+status: draft
+names_public: false
+team: []
+summary: The team measured 47 interior automatic doors across campus buildings, recording
+  push-button height, closing speed and where each door leads. About three-quarters lead to
+  restrooms; only one serves a lecture hall and one leads outside. Only 4 of 18 single-person
+  restrooms they mapped have an automatic button. They published a web map, a story map with
+  a screen-reader text version, and a form for reporting problems.
+image:
+  file: doors.jpg
+  alt: Measuring the height of an automatic door push button with a tape measure
+links:
+  storymap: https://storymaps.arcgis.com/stories/ee457e18be724ba194ba2ea55e0e84bc
+  text_version: https://docs.google.com/document/d/10-iFJ1-S_jos9QLgAkBn8t_J426X-Wh_RjaneM6U6XQ/edit?tab=t.0
+  webmap: https://wwu.maps.arcgis.com/home/item.html?id=8097b3366e2549cc8d969015dc81457f
+  form: https://survey123.arcgis.com/share/10bf64e23f9f4850bf849e1ebb590aed
+license: CC BY 4.0
+next_steps: Emergency egress during power outages; wayfinding for people who are blind or
+  have low vision.
+steward: Francisco Laso
+notes: Geodatabase now in SharePoint (AccessibleDoors.gdb.zip).

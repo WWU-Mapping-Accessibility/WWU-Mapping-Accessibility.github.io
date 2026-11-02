@@ -1,0 +1,24 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2026-spring_wilson-library-sound
+title: 'Sensory spaces: sound levels in Wilson Library'
+term: Spring 2026
+track: ENVS 421
+theme: sensory
+status: draft
+names_public: false
+team: []
+summary: For neurodivergent and sensory-sensitive students, the team recorded one minute of
+  audio in each of 18 public rooms on Wilson Library's floors 2 and 5 at the busiest hour.
+  Floor 2 averaged -43.0 LUFS, about 11 LUFS louder than quiet-study Floor 5. Their dashboard
+  links each room to its recording, so you can hear a space as well as see its loudness.
+image:
+  file: wilson.jpg
+  alt: Map of Wilson Library floor 2 rooms shaded by loudness
+links:
+  dashboard: https://www.arcgis.com/apps/dashboards/d0089a3ee9ea461c91c4c55baaf5381d
+  webmap: https://arcg.is/1W4qH52
+  storymap: https://storymaps.arcgis.com/stories/1b529e276592415b9e11c209941ac921
+license: CC BY 4.0
+next_steps: Map the rest of Wilson; add lighting and smell; update during construction.
+steward: Francisco Laso
+notes: Audio recordings are in a student account; copy them to SharePoint.

@@ -1,0 +1,20 @@
+# The six MAP themes. Use these ids in project files and the same names
+# for Zotero collections and website navigation.
+buildings:
+  name: Buildings
+  blurb: Doors, restrooms, routes and audits inside campus buildings.
+outdoor:
+  name: Outdoor and trails
+  blurb: Trails, sidewalks and outdoor spaces, including Sehome Hill Arboretum.
+safety:
+  name: Safety and emergencies
+  blurb: Evacuation routes, snow routes and lifesaving equipment.
+sensory:
+  name: Sensory spaces
+  blurb: Sound, light and other sensory conditions that shape who can use a space.
+community:
+  name: Community partners
+  blurb: Projects with organizations in Bellingham and Whatcom County.
+campus-map:
+  name: Campus map and wayfinding
+  blurb: Getting accessibility data into maps and directions people actually use.

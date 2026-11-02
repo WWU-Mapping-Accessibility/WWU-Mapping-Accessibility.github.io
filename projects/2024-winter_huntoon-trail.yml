@@ -1,0 +1,23 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2024-winter_huntoon-trail
+title: Detailed accessibility mapping of the Huntoon Trail
+term: Winter 2024
+track: ENVS 421
+theme: outdoor
+status: draft
+names_public: false
+team: []
+summary: Students mapped the Huntoon Trail, the arboretum's only paved path, segment by segment.
+  The detailed approach worked well, but time ran out, so only half the segments have data.
+  Even this paved path is likely not accessible to people with mobility disabilities, because
+  its surface is in rough shape.
+links:
+  storymap: https://storymaps.arcgis.com/stories/cb757e4dd2654ae08f815c0f09788f41
+  dashboard: https://www.arcgis.com/apps/dashboards/692544387f864307a147f7476217355a
+  data: https://wwu.maps.arcgis.com/home/group.html?id=464b6411a8dd4bd2b01f1976cce35fc6
+  report: https://wwu2.sharepoint.com/:f:/r/sites/MappingAccessibility/Shared%20Documents/Sehome%20Arboretum/02_Winter%202024?csf=1&web=1&e=TJWrql
+builds_on:
+- 2023-winter_sehome-arboretum
+license: CC BY 4.0
+next_steps: Repeat the survey to cover every segment and capture seasonal change.
+steward: Francisco Laso

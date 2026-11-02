@@ -1,0 +1,21 @@
+# Backfilled from the Canvas Past Work page, SharePoint and the Spring 2026 summaries on 2026-11-01. Review before publishing.
+id: 2025-spring_campus-building-audits
+title: 'Campus building audits: from survey to map'
+term: Spring 2025
+track: ENVS 421
+theme: buildings
+status: draft
+names_public: false
+team: []
+partner: Students for Accessible Western (SAW)
+summary: MAP's first project beyond the arboretum. The team built an automated R workflow
+  that turns building-audit survey responses into formats WWU Facilities and ArcGIS Pro can
+  use, so the university's accessibility data can be updated quickly. They also made annotated
+  floor plans of Old Main and Kaiser Borsari Hall showing entrances, ramps, elevators, restrooms
+  and obstacles.
+links:
+  storymap: https://storymaps.arcgis.com/stories/6883e397c8414af28a4dc35dfe3adb71
+  report: https://wwu2.sharepoint.com/:f:/s/MappingAccessibility/IgCHIXXO7mk4TZ5T4ZWbpPgxAVSq5HQcgWm1aF6nrHG2pR8?e=S92v2V
+license: CC BY 4.0
+next_steps: Audit more buildings with the same survey.
+steward: Francisco Laso
